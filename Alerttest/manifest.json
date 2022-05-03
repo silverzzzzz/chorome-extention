@@ -1,0 +1,17 @@
+{
+  "name": "test-Extention",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "my test Extention",
+  "action": {},
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["style.css"]
+    }
+  ]
+}
